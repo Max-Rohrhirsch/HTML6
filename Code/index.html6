@@ -1,0 +1,32 @@
+<head>
+    <title>My Website</title>
+    <favicon src="./image.png">
+</head>
+<!-- comment -->
+<css>
+.slid {
+    width: 1000px;
+}
+img {
+    width: 100%;
+}
+<!-- comment -->
+
+#A {
+    background-color: red;
+}
+#B {
+    background-color: blue;
+}
+#C {
+    background-color: green;
+}
+</css>
+<split parts="2">
+    <div id="A">A<br>Still A</div>
+    <split parts="2" format="vertical">
+        <div id="B">B</div>
+        <div id="C">c</div>
+    </split>
+<!-- comment -->
+</div>

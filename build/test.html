@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+		<title>My Website</title>
+		<link rel="icon" type="image/x-icon" href="./image.png">		<style>
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono';
+}
+.slid {
+    width: 1000px;
+}
+img {
+    width: 100%;
+}
+
+
+#A {
+    background-color: red;
+}
+#B {
+    background-color: blue;
+}
+#C {
+    background-color: green;
+}
+div {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0;
+    margin: 0;
+    min-height: 20px;
+    height: 100%;
+}
+.outer-container:not(.outer-container .outer-container) {
+    display: flex;
+    align-items: stretch; /* Make the outer container stretch to the full height of its children */
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="outer-container" parts="2" >
+			<div id="A" style="width: 50%;">A
+				<br>Still A
+			</div>
+			<div class="outer-container" parts="2" format="vertical" style="width: 50%;" >
+				<div id="B" style="height: 50%;">B</div>
+				<div id="C" style="height: 50%;">c</div>
+			</div>
+		</div>
+	</body>
+</html>
